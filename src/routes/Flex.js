@@ -1,4 +1,5 @@
 import React from "react";
+import './Flex.css';
 
 function Flex(){
     return (

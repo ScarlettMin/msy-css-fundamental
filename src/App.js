@@ -1,28 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import Grid from './routes/Grid';
+import { HashRouter, Route } from 'react-router-dom';
+import Home from './routes/Home';
+import Grid1 from './routes/Grid1';
+import Grid2 from './routes/Grid2';
+import Grid3 from './routes/Grid3';
+import Grid4 from './routes/Grid4';
 import Flex from './routes/Flex';
-import './App.css';
+import Navigation from './components/Navigation';
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Navigation />
+      <Route path="/" exact={true} component={Home} />
+      <Route path="/grid1" component={Grid1} />
+      <Route path="/grid2" component={Grid2} />
+      <Route path="/grid3" component={Grid3} />
+      <Route path="/grid4" component={Grid4} />
+      <Route path="/flex" component={Flex} />
+    </HashRouter>
   );
 }
 

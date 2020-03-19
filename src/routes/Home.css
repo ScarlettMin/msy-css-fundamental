@@ -1,0 +1,43 @@
+/*
+CSS Grid Tutorial | CSS Grid Crash Course
+Dev Ed
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html {
+    font-size:12px;
+}
+body {
+    padding:1.2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    align-items:stretch;
+}
+
+.row p {
+    width:15rem;
+    height:4rem;
+    background-color: #fc5c65;
+    color:white;
+    margin-bottom:1rem;
+    font-size:2rem;
+    line-height: 4rem;
+}
+
+.column span {
+    width:4rem;
+    height:15rem;
+    background-color: #fc5c65;
+    color:white;
+    margin-right:1rem;
+    font-size:2rem;
+}
