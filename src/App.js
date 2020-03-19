@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
+import Grid from './routes/Grid';
+import Flex from './routes/Flex';
 import './App.css';
+
 
 function App() {
   return (
