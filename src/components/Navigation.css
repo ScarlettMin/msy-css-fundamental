@@ -1,0 +1,57 @@
+nav {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    padding: 0.5rem 1.5rem;
+
+    display: grid;
+    grid-template-columns: 35px 1fr;
+}
+nav a {
+    padding: 0 0.8rem;
+}
+.navLinks {
+    display: flex;
+    align-items: center;
+}
+
+#js-nav .navLinks { 
+    transition: opacity 0.5s ease-in;
+    opacity: 0; 
+}
+#js-nav.change .navLinks { opacity:1; }
+
+
+
+
+.navBars {
+    display: inline-block;
+    cursor: pointer;
+}
+  
+#js-nav .bar1,
+#js-nav .bar2,
+#js-nav .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+#js-nav.change { background-color: white; }
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+  
+/* Fade out the second bar */
+.change .bar2 {
+opacity: 0;
+}
+  
+/* Rotate last bar */
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-9px, -6px) ;
+transform: rotate(45deg) translate(-9px, -6px) ;
+}

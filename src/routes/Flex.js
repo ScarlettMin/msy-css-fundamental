@@ -3,7 +3,7 @@ import './Flex.css';
 
 function Flex(){
     return (
-        <div>FLex Page</div>
+        <section>Coming soon!</section>
     )
 }
 

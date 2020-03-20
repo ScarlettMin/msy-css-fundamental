@@ -1,2 +1,4 @@
 # msy-css-fundamental
-Made with css and React.
+Fundamental made with html, css and React.
+
+Refer to Youtube Channel Dev Ed.
