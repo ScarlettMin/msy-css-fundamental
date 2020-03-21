@@ -30,7 +30,10 @@ class Navigation extends React.Component {
                     <Link to="/Grid3">Grid3</Link>
                     <Link to="/Grid4">Grid4</Link>
                     <Link to="/Grid5">Grid5</Link>
-                    <Link to="/Flex">Flex</Link>
+                    <Link to="/Flex1">Flex1</Link>
+                    <Link to="/Flex2">Flex2</Link>
+                    <Link to="/Flex3">Flex3</Link>
+                    <Link to="/Flex4">Flex4</Link>
                     <Link to="/Contact">Contact</Link>
                 </div>
             </nav>
