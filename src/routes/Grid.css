@@ -8,7 +8,7 @@
 .box2{ background-color: #63cdda; }
 .box3{ background-color: #f7d794; }
 section {
-    height:100vh;
+    /* height:100vh; */
     margin-bottom:1rem;
     padding:1.2rem;
     padding-top:8rem;
@@ -25,20 +25,21 @@ section {
 .grid1 .box2,
 .grid1 .box3 { padding:1.5rem 0;}
 /* grid2 - v1 ~ v7 */
-.grid2 { display: grid; }
+.grid2 { 
+    display: grid;
+    border: 0.2rem dashed #888;
+}
 .grid2.v1 {
     grid-template-columns:1fr 1fr;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 100px 150px;
 }
 .grid2.v2 {
-    height:100vh;
     grid-template-columns:1fr 1fr;
-    grid-template-rows: 1fr 1fr; 
+    grid-template-rows: 1fr 2fr; 
     /* 정확한 높이값이 없으면 내용에 따라 높이가 정해진다. 내용물에 따라서가아니라 화면을 채우면서
     해당 배율로 공간을 쓰고싶으면 height:100vh;를 추가해서 뷰포트 전체를 높이로 사용하면 된다.*/    
 }
 .grid2.v3 {
-    height:100vh;
     grid-template-columns:1fr 1fr;
     grid-template-rows: 1fr 1fr;   
 }
@@ -112,6 +113,7 @@ section {
     grid-template-areas: 
     "box1 box2"
     "box3 box3";
+    border: 0.2rem dashed #888;
 }
 .grid3 .box1 { grid-area:box1; }
 .grid3 .box2 { grid-area:box2; }
@@ -137,6 +139,7 @@ section {
     grid-template-areas: 
     "box1 box2"
     "box3 box3";
+    border: 0.2rem dashed #888;
 }
 .grid4 .box1 { 
     grid-area:box1; 
@@ -146,7 +149,10 @@ section {
 }
 
 /* grid5 - v1 ~ v4 */
-.grid5 { display: grid; }
+.grid5 { 
+    display: grid;
+    border: 0.2rem dashed #888;
+}
 .grid5 img {
     width:100%;
 }

@@ -1,57 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 nav {
-    position: absolute;
-    top: 2rem;
-    left: 0;
-    padding: 0.5rem 1.5rem;
-
-    display: grid;
-    grid-template-columns: 35px 1fr;
+    background-color: #f7f1e3;
+    display:flex;
+    flex-direction:row-reverse;
 }
-nav a {
-    padding: 0 0.8rem;
+.navWrap {
+    width:70%;
+    min-height:8vh;
+    background-color:#f7f1e3;
+    color:#e8e8e8;
+    font-family: 'Poppins', sans-serif;
 }
+nav a,
+nav a:visited { color: #6F1E51; }
 .navLinks {
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    min-height:8vh;
+}
+.navBurger {
+    display: none;
+    cursor:pointer;
+}
+.navBurger div {
+    width:25px;
+    height:3px;
+    margin:5px;
+    background-color: #6F1E51;
+}
+@media screen and (max-width:1024px){
+    .navWrap { width:65%;}
+}
+@media screen and (max-width:768px){
+    body {overflow-x:hidden;}
+    nav { width:100vw;}
+    .navLinks a,
+    .navLinks a:visited { color: #f7f1e3; }
+    .navWrap {
+        background-color: #f7f1e3;
+        width: 5%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .navLinks{
+        position: absolute;
+        top:8vh;
+        right:0;
+        height:92vh;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        background-color:#6F1E51;
+        transform:translateX(100%);
+        transition:0.5s ease-in;
+        width:50%;
+    }
+    .navLinks a { 
+        opacity:0;
+        text-align: center;
+    }
+    .navBurger { display: block;}
 }
 
-#js-nav .navLinks { 
-    transition: opacity 0.5s ease-in;
-    opacity: 0; 
+@media screen and (max-width:480px){
+    .navLinks{ width:100%; }
 }
-#js-nav.change .navLinks { opacity:1; }
+.nav-active {
+    transform:translateX(0%);
+}
+.navBurger.toggle .bar1 { transform:rotate(45deg) translate(5px, 6px); }
+.navBurger.toggle .bar2 { opacity:0; }
+.navBurger.toggle .bar3 { transform:rotate(-45deg) translate(5px, -6px); }
 
-
-
-
-.navBars {
-    display: inline-block;
-    cursor: pointer;
-}
-  
-#js-nav .bar1,
-#js-nav .bar2,
-#js-nav .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-#js-nav.change { background-color: white; }
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-  
-/* Fade out the second bar */
-.change .bar2 {
-opacity: 0;
-}
-  
-/* Rotate last bar */
-.change .bar3 {
--webkit-transform: rotate(45deg) translate(-9px, -6px) ;
-transform: rotate(45deg) translate(-9px, -6px) ;
+@keyframes navLinkFade {
+    fromt {
+        opacity:0;
+        transform:translateX(80px);
+    }
+    to {
+        opacity:1;
+        transform:translateX(0px);
+    }
 }
