@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "616156f76528bcb123f42ff82640b292",
+    "revision": "34b0e34b643174cbdc98ba67388e95b9",
     "url": "/msy-css-fundamental/index.html"
   },
   {
-    "revision": "577a0438a7e6035de6ca",
-    "url": "/msy-css-fundamental/static/css/main.a5fe5df5.chunk.css"
+    "revision": "37afe2968a8d67a98748",
+    "url": "/msy-css-fundamental/static/css/main.0a814599.chunk.css"
   },
   {
     "revision": "162e9d7abe24eb1351e7",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/msy-css-fundamental/static/js/2.053c0174.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "577a0438a7e6035de6ca",
-    "url": "/msy-css-fundamental/static/js/main.9902701e.chunk.js"
+    "revision": "37afe2968a8d67a98748",
+    "url": "/msy-css-fundamental/static/js/main.df97193c.chunk.js"
   },
   {
     "revision": "7b75c03696cc65894b08",
