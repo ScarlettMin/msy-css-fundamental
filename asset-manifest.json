@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/msy-css-fundamental/static/css/main.0a814599.chunk.css",
-    "main.js": "/msy-css-fundamental/static/js/main.e0658e5f.chunk.js",
-    "main.js.map": "/msy-css-fundamental/static/js/main.e0658e5f.chunk.js.map",
-    "runtime-main.js": "/msy-css-fundamental/static/js/runtime-main.4491bd38.js",
-    "runtime-main.js.map": "/msy-css-fundamental/static/js/runtime-main.4491bd38.js.map",
-    "static/js/2.8194950b.chunk.js": "/msy-css-fundamental/static/js/2.8194950b.chunk.js",
-    "static/js/2.8194950b.chunk.js.map": "/msy-css-fundamental/static/js/2.8194950b.chunk.js.map",
-    "index.html": "/msy-css-fundamental/index.html",
-    "precache-manifest.155755506543ab4bd115a0593068e2a2.js": "/msy-css-fundamental/precache-manifest.155755506543ab4bd115a0593068e2a2.js",
-    "service-worker.js": "/msy-css-fundamental/service-worker.js",
-    "static/css/main.0a814599.chunk.css.map": "/msy-css-fundamental/static/css/main.0a814599.chunk.css.map",
-    "static/js/2.8194950b.chunk.js.LICENSE.txt": "/msy-css-fundamental/static/js/2.8194950b.chunk.js.LICENSE.txt"
+    "main.css": "/css-fundamental/static/css/main.0a814599.chunk.css",
+    "main.js": "/css-fundamental/static/js/main.e0658e5f.chunk.js",
+    "main.js.map": "/css-fundamental/static/js/main.e0658e5f.chunk.js.map",
+    "runtime-main.js": "/css-fundamental/static/js/runtime-main.116d1cbe.js",
+    "runtime-main.js.map": "/css-fundamental/static/js/runtime-main.116d1cbe.js.map",
+    "static/js/2.8194950b.chunk.js": "/css-fundamental/static/js/2.8194950b.chunk.js",
+    "static/js/2.8194950b.chunk.js.map": "/css-fundamental/static/js/2.8194950b.chunk.js.map",
+    "index.html": "/css-fundamental/index.html",
+    "precache-manifest.72ea213afdc85ebf32b3dbadcf1da3b6.js": "/css-fundamental/precache-manifest.72ea213afdc85ebf32b3dbadcf1da3b6.js",
+    "service-worker.js": "/css-fundamental/service-worker.js",
+    "static/css/main.0a814599.chunk.css.map": "/css-fundamental/static/css/main.0a814599.chunk.css.map",
+    "static/js/2.8194950b.chunk.js.LICENSE.txt": "/css-fundamental/static/js/2.8194950b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4491bd38.js",
+    "static/js/runtime-main.116d1cbe.js",
     "static/js/2.8194950b.chunk.js",
     "static/css/main.0a814599.chunk.css",
     "static/js/main.e0658e5f.chunk.js"
